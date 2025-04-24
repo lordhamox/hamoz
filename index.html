@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscription Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>LordHamo ENT</header>
+  <div class="controls">
+    <input type="text" id="search" class="search-box" placeholder="Search accounts..." oninput="renderCards()">
+    <select id="sort" class="sort-select" onchange="renderCards()">
+      <option value="">Sort by...</option>
+      <option value="expiry">Expiry Date</option>
+      <option value="users">Users</option>
+    </select>
+  </div>
+  <div class="container" id="cards-container"></div>
+  <script src="scripts.js"></script>
+</body>
+</html>

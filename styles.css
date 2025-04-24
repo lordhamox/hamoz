@@ -1,0 +1,120 @@
+body {
+  background: #000;
+  color: #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+.controls {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.search-box, .sort-select {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: #ccc;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.search-box { flex: 1; }
+.sort-select { width: 160px; }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  padding: 20px;
+}
+.card {
+  background: #111;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #222;
+}
+.card.editing {
+  border: 1px solid #00d4ff;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
+  background: #181818;
+}
+.account {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.field-box {
+  background: #1c1c1c;
+  padding: 6px 10px;
+  border-left: 4px solid #555;
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field-box span {
+  display: inline-block;
+  width: 100%;
+  color: #ccc;
+}
+.field-box input {
+  background: #222;
+  border: 1px solid #444;
+  color: #ccc;
+  font-size: 14px;
+  width: 100%;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 5px 8px;
+  display: none;
+}
+.card.editing .field-box input { display: inline-block; }
+.card.editing .field-box span { display: none; }
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+}
+.actions button {
+  flex: 1 1 calc(50% - 8px);
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.actions button:hover { background: #555; }
+.save-btn { display: none; }
+.user-count-1 { color: #88ff88; }
+.user-count-2 { color: #ffd700; }
+.user-count-3 { color: #ffa500; }
+.user-count-4 { color: #bf80ff; }
+.user-count-5 { color: #ff5555; }
+.user-input.user-count-1 { color: #88ff88; }
+.user-input.user-count-2 { color: #ffd700; }
+.user-input.user-count-3 { color: #ffa500; }
+.user-input.user-count-4 { color: #bf80ff; }
+.user-input.user-count-5 { color: #ff5555; }
+.user-count-text.user-count-1 { color: #88ff88; }
+.user-count-text.user-count-2 { color: #ffd700; }
+.user-count-text.user-count-3 { color: #ffa500; }
+.user-count-text.user-count-4 { color: #bf80ff; }
+.user-count-text.user-count-5 { color: #ff5555; }
